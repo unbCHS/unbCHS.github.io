@@ -14,16 +14,13 @@ Error codes
 <html>
     <head>
         <title>Covington Unblocked</title>
-        <style text=css>
-            .bg {
-                background: linear-gradient(270deg, #2e2c8a, #23217b); /*#8d9022, #b5b921*/
-                background-size: 800% 800%;
-                animation: chsScroll 6s ease infinite;
-            }
-            @keyframes chsScroll {
-                0%{background-position:0% 50%};
-                50%{background-position:100% 50%};
-                100%{background-position:0% 50%};
+        <style>
+            body {
+                background: linear-gradient(270deg, color #FFD900, color #0004FF);
+                background-size: 600% 600%;
+                animation: 7s ease infinite;
+                padding: 10px;
+                font-family: arial;
             }
             header {
                 font-size: 1.5em;
@@ -79,46 +76,14 @@ Error codes
                 flex: 1;
                 padding: 10px;
             }
-            .info {
+            .info header {
                 font-size: 1.25em;
             }
-            .misc header {
-                color:#0004FF
-            }
-            button li:hover {
-                color:#FFD900
-            }
-            .he ul li {
-                padding: 10px;
-                background-color: #FFD900;
-
-            }
-            #varsource {
-                color: black;
-            }  
         </style>
     </head>
-    <body class="bg" onload="loadScene(idNum)">
+    <body>
         <div id="all-contents"> 
-            <!--scripting for finding info about the game, testing this feature as a way to simplify adding new games-->
-                     <script>
-                        /*var idNum = idNum;
-                        var source = getInfo(sourceList);
-                        var name = getInfo(nameList);
-                        var desc = getInfo(descList);
-                        var source = "/games/gettingoveritscratch.html"
-                        function getInfo(info) {
-                                return(info[idNum]);
-                        };
-                        function loadScene (idNum) {
-                            if (idNum !== 99) {
-                                document.getElementById("varsource").src = getInfo(0);
-                            }
-                            name = getInfo(nameList);
-                            desc = getInfo (descList);
-                        }*/
-                     </script>   
-            <!--this is the header, do NOT delete this-->
+                        <!--this is the header, do NOT delete this-->
             <nav>
                 <header>CHS Unblocked</header>
                 <ul>
@@ -130,14 +95,14 @@ Error codes
             <main>
                 <div class="content">
                    <!--Title of game-->
-                    <center><h1><!--Title--></h1></center>
-                      <section>           
-                       <center><p><!--iframe embed--></p></center>
+                    <center><h2><script>/* Title */</script></h2></center>
+                      <section>            
+                       <center><script>/* Source */</script></center>
                         <header>
-                            <center><h4>About</h4></center>
+                            <center><h2>How To Play</h2></center>
                         <!--put any tips here-->
                             <ul>
-                                <li><p><!--Info--></p></li>
+                                <li><p><script>/* Description */</script><p></li>
                             </ul>
                         </header>
                     </section>
