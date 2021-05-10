@@ -15,7 +15,7 @@ Error codes
     <head>
         <title>Covington Unblocked</title>
         <style>
-            @import "index.css";
+            @import "/index.css";
         </style>
     </head>
     <body class="bg" onload="loadScene(idNum)">
@@ -37,6 +37,11 @@ Error codes
                             name = getInfo(nameList);
                             desc = getInfo (descList);
                         }*/
+                        function loadScene (idNum) {
+                            getElementbyId("iframe").src = sessionStorage.getItem("iframe");
+                            getElementbyId("title").innerHtml=sessionStorage.getItem("title")
+                            getElementbyId("info").innerHtml=sessionStorage.getItem("info")
+                        }
                      </script>   
             <!--this is the header, do NOT delete this-->
             <nav>

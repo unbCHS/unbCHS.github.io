@@ -1,26 +1,23 @@
-<!--
-Error codes
-1/unknown location
-2/
-3/
-4/
-5/
-6/
-7/
-8/
-9/
--->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Covington Unblocked</title>
         <style>
-            @import "index.css";
+            @import "/index.css";
         </style>
     </head>
-    <body class="bg">
+    <script>
+         function loadScene () {
+            var src = "https://" + sessionStorage.getItem(iframe);
+            var title = sessionStorage.getItem(title)
+            var info = sessionStorage.getItem(info)
+            document.getElementById("iframe").src = src
+            document.getElementById("title").innerHtml = title
+            document.getElementById("info").innerHtml = info
+            };
+    </script>
+    <body class="bg" onload="loadScene()">
         <div id="all-contents">
-            <!--this is the header, do NOT delete this-->
             <nav>
                 <header>CHS Unblocked</header>
                 <ul>
@@ -31,15 +28,13 @@ Error codes
             </nav>
             <main>
                 <div class="content">
-                   <!--Title of game-->
-                    <center><h1><!--Title--></h1></center>
+                    <center><h1 id="title"></h1></center>
                       <section>           
-                       <center><p><!--iframe embed--></p></center>
+                       <center><p><iframe id="iframe"></iframe></p></center>
                         <header>
                             <center><h4>About</h4></center>
-                        <!--put any tips here-->
                             <ul>
-                                <li><p><!--Info--></p></li>
+                                <li><p id="info"></p></li>
                             </ul>
                         </header>
                     </section>
