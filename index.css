@@ -84,21 +84,36 @@ background: #ad9403;
 text-decoration:none;
 color:black;
 }
-#news {
+#sidebar {
+background: #cfb000;
 height: 100%; 
 width: 160px; 
-position: fixed; 
+position: relative; 
 z-index: 1; 
 top: 0; 
 left: 0;
 background-color: #111;
 overflow-x: hidden; 
 padding-top: 20px;
+flex: 3px;
 }
-#news a {
+#sidebar li {
+background: #cfb000;
 padding: 6px 8px 6px 16px;
 text-decoration: none;
 font-size: 25px;
-color: #818181;
+color: #000000;
 display: block;
-}  
+}
+/*#sidebar li :hover{
+background: #cfb000;
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 25px;
+color: #000000;
+display: block;
+}*/
+#scratchiframe {
+    width: 94%;
+    height: 600px;
+}
