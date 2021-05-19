@@ -43,4 +43,19 @@ function secretStuff() {
     };
 function redirect(location) {
     window.location.href=location.html;
-    };
+    };            
+function setCookie (key, info, expiration_date) {
+                document.cookie(key = info, expiration_date)
+    }
+function searchCookies (requestedInfo) {
+    for (var i = 0; i <=cookies.length - 1; i++) {
+                    
+        }
+    }
+function detectIfNewVisitor() {
+    var cookies = document.cookie
+                
+    }
+function changeColorScheme(colorBG, colorText, colorBody) {
+
+}
